@@ -55,52 +55,48 @@
                 <h3 class="mb-4 heading">2023-2024 Commissions Sample.</h3>
                 <div class="row d-flex no-gutters">
                     <div class="col-md-4 portfolio-wrap">
-                        <a href="images/IMG_4772.PNG" class="img image-popup js-fullheight d-flex align-items-center justify-content-center" style="background-image: url(images/IMG_4772.PNG);">
+                        <a href="images/IMG_4772.PNG" class="img image-popup js-halfheight d-flex align-items-center justify-content-center" style="background-image: url(images/IMG_4772.PNG);">
                         </a>
                     </div>
 
                     <div class="col-md-4 portfolio-wrap">
-                        <a href="images/work-2.jpg" class="img image-popup js-fullheight d-flex align-items-center justify-content-center" style="background-image: url(images/work-2.jpg);">
+                        <a href="images/work-2.jpg" class="img image-popup js-halfheight d-flex align-items-center justify-content-center" style="background-image: url(images/work-2.jpg);">
                         </a>
                     </div>
 
                     <div class="col-md-4 portfolio-wrap">
-                        <a href="images/work-3.jpg" class="img image-popup js-fullheight d-flex align-items-center justify-content-center" style="background-image: url(images/work-3.jpg);">
+                        <a href="images/work-3.jpg" class="img image-popup js-halfheight d-flex align-items-center justify-content-center" style="background-image: url(images/work-3.jpg);">
                         </a>
                     </div>
 
-                    <div class="col-md-4 portfolio-wrap hidden">
-                        <a href="images/work-4.jpg" class="img image-popup js-fullheight d-flex align-items-center justify-content-center" style="background-image: url(images/work-4.jpg);">
+                    <div class="col-md-4 portfolio-wrap">
+                        <a href="images/work-4.jpg" class="img image-popup js-halfheight d-flex align-items-center justify-content-center" style="background-image: url(images/work-4.jpg);">
                         </a>
                     </div>
 
-                    <div class="col-md-4 portfolio-wrap hidden">
-                        <a href="images/work-5.jpg" class="img image-popup js-fullheight d-flex align-items-center justify-content-center" style="background-image: url(images/work-5.jpg);">
+                    <div class="col-md-4 portfolio-wrap">
+                        <a href="images/work-5.jpg" class="img image-popup js-halfheight d-flex align-items-center justify-content-center" style="background-image: url(images/work-5.jpg);">
                         </a>
                     </div>
 
-                    <div class="col-md-4 portfolio-wrap hidden">
-                        <a href="images/work-6.jpg" class="img image-popup js-fullheight d-flex align-items-center justify-content-center" style="background-image: url(images/work-6.jpg);">
+                    <div class="col-md-4 portfolio-wrap">
+                        <a href="images/work-6.jpg" class="img image-popup js-halfheight d-flex align-items-center justify-content-center" style="background-image: url(images/work-6.jpg);">
                         </a>
                     </div>
 
-                    <div class="col-md-4 portfolio-wrap hidden">
-                        <a href="images/work-7.jpg" class="img image-popup js-fullheight d-flex align-items-center justify-content-center" style="background-image: url(images/work-7.jpg);">
+                    <div class="col-md-4 portfolio-wrap">
+                        <a href="images/work-7.jpg" class="img image-popup js-halfheight d-flex align-items-center justify-content-center" style="background-image: url(images/work-7.jpg);">
                         </a>
                     </div>
 
-                    <div class="col-md-4 portfolio-wrap hidden">
-                        <a href="images/work-8.jpg" class="img image-popup js-fullheight d-flex align-items-center justify-content-center" style="background-image: url(images/work-8.jpg);">
+                    <div class="col-md-4 portfolio-wrap">
+                        <a href="images/work-8.jpg" class="img image-popup js-halfheight d-flex align-items-center justify-content-center" style="background-image: url(images/work-8.jpg);">
                         </a>
                     </div>
 
-                    <div class="col-md-4 portfolio-wrap hidden">
-                        <a href="images/work-9.jpg" class="img image-popup js-fullheight d-flex align-items-center justify-content-center" style="background-image: url(images/work-9.jpg);">
+                    <div class="col-md-4 portfolio-wrap">
+                        <a href="images/work-9.jpg" class="img image-popup js-halfheight d-flex align-items-center justify-content-center" style="background-image: url(images/work-9.jpg);">
                         </a>
-                    </div>
-
-                    <div class="col-md-12">
-                        <a href="#" class="btn-custom-load d-block w-100 text-center py-4" id="load-more-btn">Load more <span class="fa fa-refresh"></span></a>
                     </div>
                 </div>
             </div>
@@ -116,6 +112,7 @@
 <script src="js/jquery-migrate-3.0.1.min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+
 <script src="js/jquery.easing.1.3.js"></script>
 <script src="js/jquery.waypoints.min.js"></script>
 <script src="js/jquery.stellar.min.js"></script>
@@ -126,16 +123,5 @@
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
 <script src="js/google-map.js"></script>
 <script src="js/main.js"></script>
-<script>
-    document.getElementById('load-more-btn').addEventListener('click', function(e) {
-        e.preventDefault();
-        var hiddenItems = document.querySelectorAll('.portfolio-wrap.hidden');
-        for (var i = 0; i < hiddenItems.length; i++) {
-            hiddenItems[i].classList.remove('hidden');
-        }
-        this.style.display = 'none'; // Hide the "Load more" button after loading all items
-    });
-</script>
-
 </body>
 </html>
