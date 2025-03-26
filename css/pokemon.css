@@ -15,17 +15,7 @@ header {
 }
 
 header h1 {
-    margin: 0 0 10px 0;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
-}
-
-nav a:hover {
-    text-decoration: underline;
+    margin: 0;
 }
 
 /* 主要內容 */
@@ -46,6 +36,8 @@ main {
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     width: 300px;
+    display: flex;
+    flex-direction: column;
 }
 
 .pokemon-card img {
@@ -65,13 +57,25 @@ main {
     color: #666;
 }
 
-/* 頁尾 */
-footer {
-    background-color: #333;
+/* 按鈕樣式 */
+.pokemon-btn {
+    margin-top: auto;
+    padding: 10px 20px;
+    background-color: #e3350d;
     color: white;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-} 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.pokemon-btn:hover {
+    background-color: #c62d0b;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.pokemon-btn:active {
+    transform: translateY(0);
+}
