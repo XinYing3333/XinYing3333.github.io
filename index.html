@@ -1,187 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<title>Lulu's Websites</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	
-	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>選擇語言 | Language Selection</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .language-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+            padding: 20px;
+        }
 
-	<link rel="stylesheet" href="css/animate.css">
-	
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
-	<link rel="stylesheet" href="css/magnific-popup.css">
+        .language-title {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: var(--text-color);
+        }
 
-	
-	<link rel="stylesheet" href="css/flaticon.css">
-	<link rel="stylesheet" href="css/style.css">
+        .language-buttons {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .language-button {
+            padding: 1rem 2rem;
+            font-size: 1.2rem;
+            border: 2px solid var(--text-color);
+            background: transparent;
+            color: var(--text-color);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .language-button:hover {
+            background: var(--text-color);
+            color: var(--background-color);
+        }
+
+        @media (max-width: 768px) {
+            .language-buttons {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    </style>
 </head>
 <body>
-
-	<div id="colorlib-page">
-		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
-		<aside id="colorlib-aside" role="complementary" class="js-fullheight">
-
-			<h1 id="colorlib-logo" class="mb-4 mb-md-5"><a href="index.html" style="background-image: url(https://images.unsplash.com/photo-1594201272716-9ad78d16848b?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);">Lulu's PortFolio</a></h1>
-			<nav id="colorlib-main-menu" role="navigation">
-				<ul>
-					<li class="colorlib-active"><a href="index.html">Home</a></li>
-					<li><a href="gallery.html">Gallery</a></li>
-					<li><a href="about.html">About</a></li>
-					<li><a href="pricing.html">Pricing</a></li>
-					<li><a href="contact.html">Contact</a></li>
-				</ul>
-			</nav>
-
-			<div class="colorlib-footer">
-				<div class="mb-4">
-					<h3>Self-drawn images for viewing only.</h3>
-					<h3>Prohibited for other purposes.</h3>
-				</div>
-				<p class="pfooter"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-					Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib.com</a>
-					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-				</div>
-			</aside> <!-- END COLORLIB-ASIDE -->
-			<div id="colorlib-main">
-				<section class="ftco-section ftco-no-pt ftco-no-pb">
-					<div class="container px-md-0">
-						<div class="row d-flex no-gutters">
-
-							<div class="col-md-12 portfolio-wrap">
-								<div class="row no-gutters align-items-center">
-									<a href="images/plurk-3.jpg" class="col-md-6 img image-popup js-fullheight d-flex align-items-center justify-content-center" style="background-image: url(images/plurk-3.jpg);">
-										<div class="icon d-flex align-items-center justify-content-center">
-											<span class="fa fa-expand"></span>
-										</div>
-									</a>
-									<div class="col-md-6">
-										<div class="text pt-5 pl-0 px-lg-5 pl-md-4 ftco-animate">
-											<div class="px-4 px-lg-4">
-												<div class="desc">
-													<div class="top">
-														<span class="subheading">Portfolio</span>
-														<h2 class="mb-4"><a>Digital Artworks</a></h2>
-													</div>
-													<div class="absolute">
-														<p>A showcase of various drawing commissions, including half-body and full-body illustrations, as well as some headshots and more, using Procreate.</p>
-													</div>
-													<p><a href="gallery.html" class="custom-btn">View Gallery</a></p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="col-md-12 portfolio-wrap">
-								<div class="row no-gutters align-items-center">
-									<a href="images/whisp.jpg" class="col-md-6 order-md-last img image-popup js-fullheight d-flex align-items-center justify-content-center" style="background-image: url(images/whisp.jpg);">
-										<div class="icon d-flex align-items-center justify-content-center">
-											<span class="fa fa-expand"></span>
-										</div>
-									</a>
-									<div class="col-md-6">
-										<div class="text pt-5 px-md-5 ftco-animate">
-											<div class="px-4 px-lg-4">
-												<div class="desc text-md-right">
-													<div class="top">
-														<span class="subheading">Game Project</span>
-														<h2 class="mb-4"><a>Puppet's Heart</a></h2>
-													</div>
-													<div class="absolute">
-														<p>This is a story set in a fantastical land. Players will take on the role of a little puppet who dreams of becoming a human child. Embarking on a journey aboard a train that travels across the kingdom, the puppet sets out on an adventure to discover emotions.</p>
-													</div>
-													<p><a href='https://whisptale.carrd.co/' target='_blank' class="custom-btn">View Info</a></p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="col-md-12 portfolio-wrap">
-								<div class="row no-gutters align-items-center">
-									<a href="https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F3b7939eb-36f5-4f70-a34e-bae69f032a1f%2FIMG_3997.jpeg?table=block&id=3724be8a-ca68-43cf-90f8-ff2ebd0d7ce1&spaceId=90871d07-f30b-4481-9fd2-94951a520ea4&width=2000&userId=402695ed-517a-42ee-8c59-90189388cad1&cache=v2" class="col-md-6 img image-popup js-fullheight d-flex align-items-center justify-content-center" style="background-image: url(https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F3b7939eb-36f5-4f70-a34e-bae69f032a1f%2FIMG_3997.jpeg?table=block&id=3724be8a-ca68-43cf-90f8-ff2ebd0d7ce1&spaceId=90871d07-f30b-4481-9fd2-94951a520ea4&width=2000&userId=402695ed-517a-42ee-8c59-90189388cad1&cache=v2);">
-										<div class="icon d-flex align-items-center justify-content-center">
-											<span class="fa fa-expand"></span>
-										</div>
-									</a>
-									<div class="col-md-6">
-										<div class="text pt-5 pl-0 px-lg-5 pl-md-4 ftco-animate">
-											<div class="px-4 px-lg-4">
-												<div class="desc">
-													<div class="top">
-														<span class="subheading">Original Works</span>
-														<h2 class="mb-4"><a>Post-Apocalyptic</a></h2>
-													</div>
-													<div class="absolute">
-														<p>An original personal fantasy post-apocalyptic world. Two thousand years after a massive meteor impact, Earth was transformed, with civilizations destroyed and the landscape drastically changed. Survivors came together to rebuild human civilization, but they soon faced a new threat: radiation from the meteor that severely affected the ecosystem and living creatures.</p>
-													</div>
-													<p><a href="https://www.notion.so/3862cccc2c2642baabdeac5bc78762c8?pvs=4" target='_blank' class="custom-btn">View Info</a></p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="col-md-12 portfolio-wrap">
-								<div class="row no-gutters align-items-center">
-									<a href="https://images.unsplash.com/photo-1601027847350-0285867c31f7?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="col-md-6 order-md-last img image-popup js-fullheight d-flex align-items-center justify-content-center" style="background-image: url(https://images.unsplash.com/photo-1601027847350-0285867c31f7?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);">
-										<div class="icon d-flex align-items-center justify-content-center">
-											<span class="fa fa-expand"></span>
-										</div>
-									</a>
-									<div class="col-md-6">
-										<div class="text pt-5 px-md-5 ftco-animate">
-											<div class="px-4 px-lg-4">
-												<div class="desc text-md-right">
-													<div class="top">
-														<span class="subheading">Something Fun</span>
-														<h2 class="mb-4"><a>This is a prank.</a></h2>
-													</div>
-													<div class="absolute">
-														<p>This is just a fun webpage. If you're really curious, just take a look!</p>
-													</div>
-													<p><a href='player.html' class="custom-btn">View Info</a></p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="col-md-12">
-								<a href="#" class="btn-custom-load d-block w-100 text-center py-4" id="load-more-btn">Back To Top</a>
-							</div>
-						</div>
-					</div>
-				</section>
-			</div><!-- END COLORLIB-MAIN -->
-		</div><!-- END COLORLIB-PAGE -->
-
-		<!-- loader -->
-		<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
-
-
-		<script src="js/jquery.min.js"></script>
-		<script src="js/jquery-migrate-3.0.1.min.js"></script>
-		<script src="js/popper.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/jquery.easing.1.3.js"></script>
-		<script src="js/jquery.waypoints.min.js"></script>
-		<script src="js/jquery.stellar.min.js"></script>
-		<script src="js/owl.carousel.min.js"></script>
-		<script src="js/jquery.magnific-popup.min.js"></script>
-		<script src="js/jquery.animateNumber.min.js"></script>
-		<script src="js/scrollax.min.js"></script>
-		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-		<script src="js/google-map.js"></script>
-		<script src="js/main.js"></script>
-		
-	</body>
-	</html>
+    <div class="language-container">
+        <h1 class="language-title">請選擇語言 / Please select language</h1>
+        <div class="language-buttons">
+            <a href="intro.html" class="language-button">繁體中文</a>
+            <a href="intro-en.html" class="language-button">English</a>
+        </div>
+    </div>
+</body>
+</html> 
