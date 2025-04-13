@@ -3,7 +3,7 @@
     --bg-color: #ffffff;
     --text-color: #1a1a1a;
     --border-color: #e0e0e0;
-    --hover-color: #333333;
+    --hover-color: #b8d2e1;
     --shadow-color: rgba(0,0,0,0.1);
     --accent-color: #333333;
     --gradient-start: #ffffff;
@@ -14,10 +14,15 @@
     --bg-color: #1a1a1a;
     --text-color: #ffffff;
     --border-color: #333333;
-    --hover-color: #4a4a4a;
+    --hover-color: #545454;
     --shadow-color: rgba(0,0,0,0.3);
     --gradient-start: #1a1a1a;
     --gradient-end: #2d2d2d;
+}
+
+html[data-theme='dark'] body:not(.ready),
+html[data-theme='light'] body:not(.ready) {
+    transition: none !important;
 }
 
 * {
@@ -148,7 +153,7 @@ body:not(.intro-page) .logo {
     margin-bottom: 1.5rem;
     opacity: 0;
     transform: translateY(20px);
-    animation: fadeInUp 1s ease forwards;
+    animation: fadeInUp 0.5s ease forwards;
 }
 
 .intro-text {
@@ -156,13 +161,20 @@ body:not(.intro-page) .logo {
     margin-bottom: 3rem;
     opacity: 0;
     transform: translateY(20px);
-    animation: fadeInUp 1s ease forwards 0.3s;
+    animation: fadeInUp 0.5s ease forwards 0.3s;
+}
+
+.intro-photo {
+    display: flex;
+    height: 35vh;
+    overflow: hidden;
+    margin-bottom: 1rem;
 }
 
 .intro-buttons {
     display: flex;
     /*justify-content: center;*/
-    gap: 2rem;
+    gap: 1rem;
     margin-bottom: 3rem;
     flex-wrap: wrap;
 }
@@ -285,7 +297,7 @@ body:not(.intro-page) .logo {
 
 /* 精選作品區塊 */
 .featured-section {
-    padding: 2rem 0;
+    padding: 4rem 0;
 }
 
 .featured-grid {
@@ -380,9 +392,9 @@ body:not(.intro-page) .logo {
 }
 
 /* 作品分類頁面 */
-.category-section {
+/*.category-section {
     padding: 4rem 0;
-}
+}*/
 
 /* 標題樣式 */
 .section-title {
@@ -415,7 +427,7 @@ body:not(.intro-page) .logo {
 
 .section-title-intro {
     text-align: left;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
     font-size: 2.5rem;
     position: relative;
     display: inline-block;
@@ -635,4 +647,52 @@ body:not(.intro-page) .logo {
     .game-content {
         grid-template-columns: 1fr;
     }
-} 
+}
+/* index style */
+.language-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    padding: 200px;
+}
+
+.language-title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: var(--text-color);
+}
+
+.language-buttons {
+    display: flex;
+    gap: 2rem;
+}
+
+.language-button {
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    border: 2px solid var(--text-color);
+    background: transparent;
+    color: var(--text-color);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.language-button:hover {
+    background: var(--text-color);
+    color: var(--bg-color);
+}
+
+@media (max-width: 768px) {
+    .language-buttons {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+.center-wrapper {
+    display: block;
+}
