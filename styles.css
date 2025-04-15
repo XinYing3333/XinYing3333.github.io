@@ -2,6 +2,7 @@
 :root {
     --bg-color: #ffffff;
     --text-color: #1a1a1a;
+    --smalltext-color: #6f8593;
     --border-color: #e0e0e0;
     --hover-color: #b8d2e1;
     --shadow-color: rgba(0,0,0,0.1);
@@ -13,6 +14,7 @@
 [data-theme="dark"] {
     --bg-color: #1a1a1a;
     --text-color: #ffffff;
+    --smalltext-color: #9d9d9d;
     --border-color: #333333;
     --hover-color: #545454;
     --shadow-color: rgba(0,0,0,0.3);
@@ -105,10 +107,12 @@ body:not(.intro-page) .logo {
 }
 
 .theme-toggle:hover {
-    transform: scale(1.1);
+    background-color: var(--text-color);
+    transform: scale(1.2);
 }
 
 .theme-toggle:hover i {
+    color: var(--bg-color);
     transform: rotate(180deg);
 }
 
@@ -157,7 +161,8 @@ body:not(.intro-page) .logo {
 }
 
 .intro-text {
-    font-size: 1.2rem;
+    color: var(--smalltext-color);
+    font-size: 1.1rem;
     margin-bottom: 3rem;
     opacity: 0;
     transform: translateY(20px);
@@ -201,11 +206,14 @@ body:not(.intro-page) .logo {
 }
 
 .intro-button:hover {
-    transform: translateY(-5px);
+    color: var(--bg-color);
+    background-color: var(--text-color);
+    transform: translateY(20px);
     box-shadow: 0 10px 20px var(--shadow-color);
 }
 
 .social-links {
+    color: var(--smalltext-color);
     display: flex;
     /*justify-content: center;*/
     gap: 2rem;
@@ -215,7 +223,7 @@ body:not(.intro-page) .logo {
 }
 
 .social-link {
-    color: var(--text-color);
+    color: var(--smalltext-color);
     font-size: 1.5rem;
     transition: all 0.3s ease;
 }
@@ -273,6 +281,12 @@ body:not(.intro-page) .logo {
     background-color: var(--hover-color);
     color: var(--bg-color);
     transform: translateX(5px);
+}
+
+.list-active {
+    background-color: var(--hover-color);
+    color: var(--bg-color);
+    transform: translateX(8px);
 }
 
 /* 主內容區 */
@@ -361,6 +375,8 @@ body:not(.intro-page) .logo {
     opacity: 0.8;
 }
 
+
+
 /* 回到頂部按鈕 */
 .back-to-top {
     position: fixed;
@@ -433,7 +449,6 @@ body:not(.intro-page) .logo {
     display: inline-block;
     padding-left: 0;
     font-weight: bold;
-    transition: all 0.3s ease;
     animation: fadeInUp 1s ease forwards 0.3s;
 }
 
