@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
             e.preventDefault();
             const target = document.querySelector(this.getAttribute('href'));
             if (target) {
-                target.scrollIntoView({ behavior: 'smooth' });
+                target.scrollIntoView({behavior: 'smooth'});
             }
         });
     });
@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // 作品點擊導向
-    const portfolioItems = document.querySelectorAll('.portfolio-item');
+    /*const portfolioItems = document.querySelectorAll('.portfolio-item');
     portfolioItems.forEach(item => {
         item.addEventListener('click', () => {
             const gameTitle = item.querySelector('h3').textContent;
@@ -69,15 +69,17 @@ document.addEventListener('DOMContentLoaded', function () {
             params.append('image', gameImage);
             window.location.href = `game-template.html?${params.toString()}`;
         });
-    });
+    });*/
 
     // Resize 控制 navbar
     const navbar = document.querySelector('.navbar');
+
     function handleResize() {
         const isMobile = window.innerWidth < 768;
         if (!isMobile) navbar.classList.add('active');
         else navbar.classList.remove('active');
     }
+
     handleResize();
     window.addEventListener('resize', handleResize);
 
@@ -93,7 +95,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     backToTopButton.addEventListener('click', function () {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
+        window.scrollTo({top: 0, behavior: 'smooth'});
     });
 
     // 初始淡入動畫
@@ -142,4 +144,36 @@ document.addEventListener('DOMContentLoaded', function () {
 
     window.addEventListener('scroll', animateOnScroll);
     animateOnScroll();
+    });
+
+// image zoom in
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = lightbox.querySelector(".lightbox-img");
+const lightboxWrapper = lightbox.querySelector(".lightbox-wrapper");
+const closeBtn = lightbox.querySelector(".lightbox-close");
+
+document.querySelectorAll(".screenshots-grid img").forEach(img => {
+    img.addEventListener("click", () => {
+        lightboxImg.src = img.src;
+        lightboxImg.classList.remove("zoomed");
+        lightboxWrapper.scrollTop = 0;
+        lightboxWrapper.scrollLeft = 0;
+        lightbox.classList.add("show");
+    });
+});
+
+closeBtn.addEventListener("click", () => {
+    lightbox.classList.remove("show");
+    lightboxImg.src = "";
+});
+
+lightbox.addEventListener("click", (e) => {
+    if (e.target === lightbox) {
+        lightbox.classList.remove("show");
+        lightboxImg.src = "";
+    }
+});
+
+lightboxImg.addEventListener("click", () => {
+    lightboxImg.classList.toggle("zoomed");
 });
