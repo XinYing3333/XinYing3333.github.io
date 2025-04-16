@@ -3,31 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>個人介紹</title>
+    <title>PersonalInfo</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script defer src="lang.js"></script>
+    <script src="script.js"></script>
+
 </head>
-<body class="intro-page intro-zh-page">
+<body class="intro-page">
 <a href="intro.html" class="logo">Lulu</a>
 <div class="container">
     <div class="intro-photo">
         <img src="https://i.imgur.com/QvT6pxz.jpeg" alt="PersonalPhoto">
     </div>
-    <h1 class="section-title-intro">陳欣瑩</h1>
+
+    <h1 class="section-title-intro" data-i18n="name">陳欣瑩</h1>
 
     <div class="intro-content">
         <div class="intro-text">
-            <p>簡簡單單過日子，踏踏實實做喜歡的事。</p>
+            <h3 data-i18n="slogan"><!--簡簡單單過日子，踏踏實實做喜歡的事。--></h3>
+            <p data-i18n="slogan_2"><!--簡簡單單過日子，踏踏實實做喜歡的事。--></p>
         </div>
 
         <div class="intro-buttons">
-            <a href="games.html" class="intro-button">遊戲</a>
-            <a href="arts.html" class="intro-button">美術</a>
-            <a href="projects.html" class="intro-button">專案</a>
+            <a href="games.html" class="intro-button" data-i18n="sectionTitle_Games"><!--遊戲--></a>
+            <a href="arts.html" class="intro-button" data-i18n="sectionTitle_Arts"><!--美術--></a>
+            <a href="projects.html" class="intro-button" data-i18n="sectionTitle_Projects"><!--專案--></a>
         </div>
 
         <div class="social-links">
-            <h2>社群連結</h2>
+            <h2 data-i18n="socialTitle">社群連結</h2>
             <p><a href="https://github.com/XinYing3333" target="_blank" class="social-link"><i class="fab fa-github"></i></a></p>
             <p><a href="https://www.facebook.com/lulu23333" target="_blank" class="social-link"><i class="fab fa-facebook"></i></a></p>
             <p><a href="https://www.instagram.com/luluart24/" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a></p>
@@ -35,7 +40,5 @@
         </div>
     </div>
 </div>
-
-<script src="script.js"></script>
 </body>
 </html>

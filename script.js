@@ -56,20 +56,25 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    // 作品點擊導向
-    /*const portfolioItems = document.querySelectorAll('.portfolio-item');
-    portfolioItems.forEach(item => {
-        item.addEventListener('click', () => {
-            const gameTitle = item.querySelector('h3').textContent;
-            const gameDescription = item.querySelector('p').textContent;
-            const gameImage = item.querySelector('img').src;
-            const params = new URLSearchParams();
-            params.append('title', gameTitle);
-            params.append('description', gameDescription);
-            params.append('image', gameImage);
-            window.location.href = `game-template.html?${params.toString()}`;
-        });
-    });*/
+    // language切換按鈕
+    const currentLang = localStorage.getItem("lang") || "zh";
+    const langToggle = document.createElement("button");
+    langToggle.className = "lang-toggle";
+    langToggle.innerHTML = currentLang === "zh"
+        ? '<i>EN</i>'
+        : '<i>ZH</i>';
+    document.body.appendChild(langToggle);
+    toggleLanguage(currentLang);
+
+    langToggle.addEventListener("click", () => {
+        const newLang = localStorage.getItem("lang") === "zh" ? "en" : "zh";
+        localStorage.setItem("lang", newLang);
+        applyLang(newLang); // 呼叫你的語言套用函式
+        toggleLanguage(newLang);
+        langToggle.innerHTML = newLang === "zh"
+            ? '<i>EN</i>'
+            : '<i>ZH</i>';
+    });
 
     // Resize 控制 navbar
     const navbar = document.querySelector('.navbar');

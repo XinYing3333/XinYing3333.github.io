@@ -117,10 +117,10 @@ body:not(.intro-page) .logo {
 }
 
 /* 語言切換按鈕 */
-.language-toggle {
+.lang-toggle {
     position: fixed;
     top: 1rem;
-    right: 4rem;
+    right: 4.5rem;
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -135,8 +135,19 @@ body:not(.intro-page) .logo {
     box-shadow: 0 2px 8px var(--shadow-color);
 }
 
-.language-toggle:hover {
-    transform: scale(1.1);
+.lang-toggle i {
+    color: var(--text-color);
+    font-size: 0.8rem;
+    transition: transform 0.3s ease;
+}
+
+.lang-toggle:hover {
+    background-color: var(--text-color);
+    transform: scale(1.2);
+}
+
+.lang-toggle:hover i {
+    color: var(--bg-color);
 }
 
 /* 個人介紹頁面樣式 */
@@ -163,10 +174,15 @@ body:not(.intro-page) .logo {
 .intro-text {
     color: var(--smalltext-color);
     font-size: 1.1rem;
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
     opacity: 0;
     transform: translateY(20px);
     animation: fadeInUp 0.5s ease forwards 0.3s;
+}
+
+.intro-text p {
+    padding-top: 2rem;
+    padding-bottom: 0.5rem;
 }
 
 .intro-photo {
@@ -463,7 +479,6 @@ body:not(.intro-page) .logo {
 
 .section-title-intro {
     text-align: left;
-    margin-bottom: 1rem;
     font-size: 2.5rem;
     position: relative;
     display: inline-block;

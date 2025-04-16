@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>美術作品 - 作品集</title>
+    <title>Arts</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
+    <script defer src="lang.js"></script>
+    <script src="script.js"></script>
 </head>
 <body>
     <nav class="navbar">
         <ul>
-            <!--<li><a href="home.html">首頁</a></li>-->
-            <li><a href="games.html">遊戲作品</a></li>
-            <li><a href="arts.html" class="list-active">美術作品</a></li>
-            <li><a href="projects.html">專題作品</a></li>
+            <li><a href="games.html" data-i18n="sectionTitle_Games"></a></li>
+            <li><a href="arts.html" class="list-active" data-i18n="sectionTitle_Arts"></a></li>
+            <li><a href="projects.html" data-i18n="sectionTitle_Projects"></a></li>
         </ul>
         <div class="social-links-navbar">
             <a href="https://github.com/XinYing3333" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
@@ -28,22 +28,22 @@
 
     <div class="container">
         <section class="category-section">
-            <h2 class="section-title">美術作品</h2>
+            <h2 class="section-title" data-i18n="sectionTitle_Arts"><!--美術作品--></h2>
             <div class="category-grid">
                 <a href="art-character.html" class="portfolio-item">
                     <img src="images/plurk-4.jpg" alt="美術作品1">
                     <div class="portfolio-item-content">
-                        <h3>角色設計</h3>
-                        <p>遊戲角色概念設計</p>
+                        <h3 data-i18n="art_name_character"><!--角色設計--></h3>
+                        <p data-i18n="art_info_character"><!--遊戲角色概念設計--></p>
                     </div>
                 </a>
-                <div class="portfolio-item">
+                <a href="art-character.html" class="portfolio-item">
                     <img src="images/plurk-6.jpg" alt="美術作品2">
                     <div class="portfolio-item-content">
-                        <h3>場景設計</h3>
-                        <p>遊戲場景概念設計</p>
+                        <h3 data-i18n="art_name_environment"><!--場景設計--></h3>
+                        <p data-i18n="art_info_environment"><!--遊戲場景概念設計--></p>
                     </div>
-                </div>
+                </a>
             </div>
         </section>
     </div>

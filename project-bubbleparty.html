@@ -3,16 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>遊戲作品</title>
+    <title>BubbleParty</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script defer src="lang.js"></script>
+    <script src="script.js"></script>
 </head>
 <body>
 <nav class="navbar">
     <ul>
-        <li><a href="games.html">遊戲作品</a></li>
-        <li><a href="arts.html">美術作品</a></li>
-        <li><a href="projects.html" class="list-active">專題作品</a></li>
+        <li><a href="games.html" data-i18n="sectionTitle_Games"></a></li>
+        <li><a href="arts.html" data-i18n="sectionTitle_Arts"></a></li>
+        <li><a href="projects.html" class="list-active" data-i18n="sectionTitle_Projects"></a></li>
     </ul>
     <div class="social-links-navbar">
         <a href="https://github.com/XinYing3333" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
@@ -22,7 +24,7 @@
     </div>
 </nav>
     <div class="container">
-        <h1 class="section-title" id="game-title">泡泡派對 BubbleParty!</h1>
+        <h1 class="section-title" id="game-title" data-i18n="project_name_bubbleParty"><!--泡泡派對 BubbleParty!--></h1>
 
         <a href="intro.html" class="logo">Lulu</a>
 
@@ -30,48 +32,65 @@
             <div class="game-cover">
                 <img id="game-cover" src="https://ggjv4.s3.us-west-1.amazonaws.com/files/styles/sidebar_full/s3/games/2025/262148/featured/Title_0.png?VersionId=fBheuLpS6Qy.2V9Re0wa7yaOF6Vdb1Q0&itok=fkUWj-kp" alt="遊戲封面">
             </div>
-            
             <div class="game-info">
                 <div class="game-description">
-                    <h2>遊戲簡介</h2>
-                    <p id="game-description">阿棒是個平凡的上班族，他最愛的事就是釣魚了。某天，他被老闆派到一個偏遠的鄉村出差，他就順勢開啓了自己的釣魚事業。 </p>
+                    <h2 data-lang="zh">遊戲簡介</h2>
+                    <h2 data-lang="en">About This Game</h2>
+
+                    <p data-lang="zh" class="game-description">阿棒是個平凡的上班族，他最愛的事就是釣魚了。某天，他被老闆派到一個偏遠的鄉村出差，他就順勢開啓了自己的釣魚事業。 </p>
+                    <p data-lang="en" class="game-description">Ah Bang is an ordinary office worker with a passion for fishing. One day, his boss sent him on a business trip to a remote village. Seizing the opportunity, he embarked on his very own fishing adventure. </p>
+
                 </div>
-                
+
                 <div class="game-details">
-                    <h2>遊戲資訊</h2>
+                    <h2 data-lang="zh">遊戲資訊</h2>
+                    <h2 data-lang="en">Game Info</h2>
                     <ul>
-                        <li><strong>開發時間：</strong>2024/12/31</li>
-                        <li><strong>開發引擎：</strong>Unity</li>
-                        <li><strong>遊戲類型：</strong>2D釣魚小游戲</li>
+                        <li data-lang="zh"><strong>開發時間：</strong>2024/12/31</li>
+                        <li data-lang="en"><strong>DevelopTime：</strong>2024/12/31</li>
+
+                        <li data-lang="zh"><strong>開發引擎：</strong>Unity</li>
+                        <li data-lang="en"><strong>Engine：</strong>Unity</li>
+
+                        <li data-lang="zh"><strong>遊戲類型：</strong>2D釣魚小游戲</li>
+                        <li data-lang="en"><strong>Genre：</strong>2D Fishing Game</li>
+
                     </ul>
                 </div>
-                
+
                 <div class="game-tags">
-                    <span class="portfolio-tag">像素風</span>
-                    <span class="portfolio-tag">釣魚</span>
-                    <span class="portfolio-tag">休閒</span>
+                    <span class="portfolio-tag" data-i18n="game_tag1_Abang">像素風</span>
+                    <span class="portfolio-tag" data-i18n="game_tag2_Abang">釣魚</span>
+                    <span class="portfolio-tag" data-i18n="game_tag3_Abang">休閒</span>
                 </div>
-                
+
                 <div class="game-links">
-                    <a href="https://globalgamejam.org/games/2025/paopaopaidui-bubbleparty-4" target="_blank" class="play-button">
-                        <i class="fas fa-play"></i> 遊戲網站
+                    <a href="https://globalgamejam.org/games/2025/paopaopaidui-bubbleparty-4" target="_blank" class="play-button" data-lang="zh">
+                        <i class="fas fa-play" ></i> 遊戲網站
+                    </a>
+                    <a href="https://globalgamejam.org/games/2025/paopaopaidui-bubbleparty-4" target="_blank" class="play-button" data-lang="en">
+                        <i class="fas fa-play" ></i> Website
                     </a>
                 </div>
             </div>
         </div>
         <div class="game-screenshots">
-            <h2>遊戲截圖</h2>
+            <h2 data-lang="zh">遊戲截圖</h2>
+            <h2 data-lang="en">GamePlay Scene</h2>
             <div class="screenshots-grid">
                 <img src="https://ggjv4.s3.us-west-1.amazonaws.com/files/styles/flexslider_full/s3/games/2025/262148/screenshot/Game_0.png?VersionId=iXjQjyXWoWuLzzdQ3Ed0VdsyQ.UFFWT3&itok=MCq5r3Hi" alt="截圖1">
                 <img src="https://ggjv4.s3.us-west-1.amazonaws.com/files/styles/flexslider_full/s3/games/2025/262148/screenshot/Result_0.png?VersionId=22pD3OS5.4j3HN9MqY5ITYhbWiNc6v_d&itok=w7JPyRA3" alt="截圖2">
             </div>
         </div>
         <div class="game-details">
-            <h2>學習歷程</h2>
+            <h2 data-lang="zh">學習歷程</h2>
+            <h2 data-lang="en">Process of Learning</h2>
             <ul>
-                <li><strong>崗位：</strong>2D美術</li>
+                <li data-lang="zh"><strong>技能：</strong>釣魚系統、背包系統、前後景深</li>
+                <li data-lang="en"><strong>Skills：</strong>FishingSystem、InventorySystem、Depth of Field in 2D</li>
             </ul>
-            <p>阿棒是個平凡的上班族阿棒是個平凡的上班族阿棒是個平凡的上班族</p>
+            <p data-lang="zh">阿棒是個平凡的上班族阿棒是個平凡的上班族阿棒是個平凡的上班族</p>
+            <p data-lang="en">Abang~~Abang~~Abang~~Abang~~Abang~~Abang~~</p>
         </div>
     </div>
 
