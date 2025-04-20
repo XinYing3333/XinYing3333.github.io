@@ -3,21 +3,21 @@ const translations = {
         //intro.html
         title: "My Portfolio",
         name: "Tan Xin Ying",
-        slogan: "Game Programing · 2D Art",
+        slogan: "Game Developer · 2D Artist",
         slogan_2: "Live simply, do what you love.",
         socialTitle: "Social Links",
 
         //section title
         sectionTitle_Arts:"Arts",
-        sectionTitle_Games:"Games",
-        sectionTitle_Projects:"Projects",
+        sectionTitle_Games:"Solo Projects",
+        sectionTitle_Projects:"Group Projects",
 
         //Abang
         game_name_Abang:"Good Fishing",
         game_info_Abang:"A 2D mini game that develop with Unity.",
-        game_tag1_Abang:"Pixel art",
-        game_tag2_Abang:"Fishing",
-        game_tag3_Abang:"Chill",
+
+        game_tag_Program:"Programming",
+        game_tag_Art:"Art",
 
         //CharacterArt
         art_name_character:"Character Design",
@@ -36,21 +36,21 @@ const translations = {
         //intro.html
         title: "我的作品集",
         name: "陳欣瑩",
-        slogan: "遊戲程式 · 2D美術",
+        slogan: "遊戲開發 · 2D美術",
         slogan_2: "簡簡單單過日子，踏踏實實做喜歡的事。",
         socialTitle: "社群連結",
 
         //section title
         sectionTitle_Arts:"美術",
-        sectionTitle_Games:"遊戲",
-        sectionTitle_Projects:"專案",
+        sectionTitle_Games:"個人專案",
+        sectionTitle_Projects:"團隊專案",
 
         //Abang
         game_name_Abang:"阿棒愛釣魚",
         game_info_Abang:"使用 Unity 開發的 2D 釣魚小遊戲",
-        game_tag1_Abang:"像素風",
-        game_tag2_Abang:"釣魚",
-        game_tag3_Abang:"休閒",
+
+        game_tag_Program:"程式",
+        game_tag_Art:"美術",
 
         //CharacterArt
         art_name_character:"角色設計",
