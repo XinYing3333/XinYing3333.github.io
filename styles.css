@@ -636,7 +636,6 @@ body:not(.intro-page) .logo {
     gap: 1rem;
     margin-top: 1rem;
 }
-
 .screenshots-grid-detail {
     display: inline-flex;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -836,3 +835,65 @@ body:not(.intro-page) .logo {
     cursor: pointer;
     z-index: 10000;
 }
+/* --- 響應式補強 --- */
+@media (max-width: 767px) {
+    .container {
+        padding: 1rem !important;
+        width: 100% !important;
+        box-sizing: border-box;
+    }
+
+    .game-cover img,
+    .screenshots-grid img,
+    .screenshots-grid-detail img {
+        width: 100% !important;
+        height: auto !important;
+    }
+    .screenshots-grid-detail {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-top: 1rem;
+        justify-content: center;
+    }
+
+    .screenshots-grid-detail img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+    iframe.video {
+        width: 100% !important;
+        height: auto !important;
+        aspect-ratio: 16 / 9;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        padding: 1rem;
+        gap: 0.5rem;
+    }
+
+    .game-info {
+        width: 100%;
+    }
+
+    .game-links {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .intro-photo {
+        width: 70vw;
+        height: 70vw;
+    }
+
+    .intro-button {
+        width: 100%;
+    }
+
+    .language-container {
+        padding: 4rem 2rem !important;
+    }
+}
+
