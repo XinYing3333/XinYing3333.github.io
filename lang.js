@@ -29,6 +29,10 @@ const translations = {
         art_name_illustration:"Illustration",
         art_info_illustration:"",
 
+        //Poster
+        art_name_poster:"Event Visual Design",
+        art_info_poster:"",
+
         //EnvironmentArt
         art_name_environment:"Environment Design",
         art_info_environment:"Game environment concept design.",
@@ -75,6 +79,10 @@ const translations = {
         //Illustration
         art_name_illustration:"角色插圖",
         art_info_illustration:"",
+
+        //Poster
+        art_name_poster:"活動視覺設計",
+        art_info_poster:"",
 
         //EnvironmentArt
         art_name_environment:"場景設計",
