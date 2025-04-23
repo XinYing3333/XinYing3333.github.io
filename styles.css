@@ -186,7 +186,7 @@ body:not(.intro-page) .logo {
     animation: fadeInUp 0.5s ease forwards 0.3s;
 }
 
-.intro-text p {
+.padding-intro {
     padding-top: 2rem;
     padding-bottom: 0.5rem;
 }
@@ -714,7 +714,7 @@ body:not(.intro-page) .logo {
     }
     
     .container {
-        margin-left: 215px;
+        margin-inline: 220px;
         margin-top: 4rem;
     }
 
@@ -882,7 +882,8 @@ body:not(.intro-page) .logo {
 /* --- 響應式補強 --- */
 @media (max-width: 767px) {
     .container {
-        padding: 1rem !important;
+        padding-inline: 2rem !important;
+        padding-top: 5rem !important;
         width: 100% !important;
         box-sizing: border-box;
     }
