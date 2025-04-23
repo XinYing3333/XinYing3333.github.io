@@ -3,6 +3,7 @@
     --bg-color: #ffffff;
     --text-color: #1a1a1a;
     --smalltext-color: #6f8593;
+    --link-color: #46aee7;
     --border-color: #e0e0e0;
     --hover-color: #b8d2e1;
     --shadow-color: rgba(0,0,0,0.1);
@@ -15,6 +16,7 @@
     --bg-color: #1a1a1a;
     --text-color: #ffffff;
     --smalltext-color: #9d9d9d;
+    --link-color: #60bbec;
     --border-color: #333333;
     --hover-color: #707070;
     --shadow-color: rgba(0,0,0,0.3);
@@ -79,6 +81,10 @@ body:not(.intro-page) .logo {
     padding: 1rem 2rem;
     border-radius: 0 0 10px 10px;
     box-shadow: 0 2px 8px var(--shadow-color);
+}
+
+.link-text-color {
+    color: var(--link-color);
 }
 
 /* 主題切換按鈕 */
@@ -574,6 +580,10 @@ body:not(.intro-page) .logo {
     color: var(--bg-color);
 }
 
+.play-button i {
+    padding-right: 0.4rem;
+}
+
 /* 遊戲模板頁面樣式 */
 .game-content {
     display: grid;
@@ -637,7 +647,7 @@ body:not(.intro-page) .logo {
 
 .screenshots-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1rem;
     margin-top: 1rem;
 }
@@ -658,7 +668,6 @@ body:not(.intro-page) .logo {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-
 }
 .screenshots-warp-small img {
     width: 23%;

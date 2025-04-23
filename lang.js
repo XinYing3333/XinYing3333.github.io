@@ -17,11 +17,17 @@ const translations = {
         game_info_Abang:"A 2D mini game that develop with Unity.",
 
         game_tag_Program:"Programming",
+        game_tag_GameDesign:"GameDesign",
         game_tag_Art:"Art",
+        game_tag_Sfx:"Sfx",
 
         //CharacterArt
-        art_name_character:"Character Design",
-        art_info_character:"Game character concept design.",
+        art_name_character:"Character Art",
+        art_info_character:"",
+
+        //Illustration
+        art_name_illustration:"Illustration",
+        art_info_illustration:"",
 
         //EnvironmentArt
         art_name_environment:"Environment Design",
@@ -30,6 +36,14 @@ const translations = {
         //BubbleParty
         project_name_bubbleParty:"Bubble Party!",
         project_info_bubbleParty:"Project of GGJ-2025.",
+
+        //Escape from the Cursed Convent
+        project_name_escape:"Escape from the Cursed Convent",
+        project_info_escape:"Published indie game project.",
+
+        //Puppet's Heart
+        project_name_puppets:"Puppet's Heart",
+        project_info_puppets:"Year 2 Game Project.",
 
     },
     zh: {
@@ -50,19 +64,33 @@ const translations = {
         game_info_Abang:"使用 Unity 開發的 2D 釣魚小遊戲",
 
         game_tag_Program:"程式",
+        game_tag_GameDesign:"企劃",
         game_tag_Art:"美術",
+        game_tag_Sfx:"音效",
 
         //CharacterArt
-        art_name_character:"角色設計",
-        art_info_character:"游戲角色概念設計。",
+        art_name_character:"角色立繪",
+        art_info_character:"",
+
+        //Illustration
+        art_name_illustration:"角色插圖",
+        art_info_illustration:"",
 
         //EnvironmentArt
         art_name_environment:"場景設計",
-        art_info_environment:"游戲場景概念設計。",
+        art_info_environment:"遊戲場景概念設計。",
 
         //BubbleParty
         project_name_bubbleParty:"泡泡派對!",
-        project_info_bubbleParty:"GGJ-2025 參與作品.",
+        project_info_bubbleParty:"GGJ-2025 參與作品。",
+
+        //Escape from the Cursed Convent
+        project_name_escape:"逃離地獄邊緣",
+        project_info_escape:"已上架的獨立遊戲專案。",
+
+        //Puppet's Heart
+        project_name_puppets:"布偶之心",
+        project_info_puppets:"大二小專題作品",
     },
 };
 
