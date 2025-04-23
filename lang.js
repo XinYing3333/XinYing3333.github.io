@@ -115,11 +115,6 @@ function setLangAndGo(lang) {
     window.location.href = 'intro.html';
 }
 
-function setLang(lang) {
-    localStorage.setItem("lang", lang);
-    applyLang(lang);
-}
-
 function applyLang(lang) {
     document.documentElement.lang = lang;
     const elements = document.querySelectorAll("[data-i18n]");
@@ -130,28 +125,6 @@ function applyLang(lang) {
         }
     });
 }
-
-/*function createLangToggle() {
-    const currentLang = localStorage.getItem("lang") || "zh";
-    const langToggle = document.createElement("button");
-    langToggle.className = "lang-toggle";
-    langToggle.innerHTML = currentLang === "zh"
-        ? '<i>EN</i>'
-        : '<i>ZH</i>';
-    document.body.appendChild(langToggle);
-
-    langToggle.addEventListener("click", () => {
-        const newLang = localStorage.getItem("lang") === "zh" ? "en" : "zh";
-        localStorage.setItem("lang", newLang);
-        applyLang(newLang); // 呼叫你的語言套用函式
-        langToggle.innerHTML = newLang === "zh"
-            ? '<i>EN</i>'
-            : '<i>ZH</i>';
-    });
-}*/
-
-
-
 
 window.addEventListener('DOMContentLoaded', () => {
     const lang = localStorage.getItem('lang') || 'zh';
