@@ -41,6 +41,10 @@ const translations = {
         project_name_bubbleParty:"Bubble Party!",
         project_info_bubbleParty:"Project of GGJ-2025.",
 
+        //Freeze!
+        project_name_freeze:"Freeze!",
+        project_info_freeze:"3D Shooting Games.",
+
         //Escape from the Cursed Convent
         project_name_escape:"Escape from the Cursed Convent",
         project_info_escape:"Published indie game project.",
@@ -91,6 +95,10 @@ const translations = {
         //BubbleParty
         project_name_bubbleParty:"泡泡派對!",
         project_info_bubbleParty:"GGJ-2025 參與作品。",
+
+        //Freeze!
+        project_name_freeze:"Freeze!",
+        project_info_freeze:"3D 遊戲",
 
         //Escape from the Cursed Convent
         project_name_escape:"逃離地獄邊緣",
