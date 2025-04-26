@@ -639,7 +639,12 @@ body:not(.intro-page) .logo {
 .game-screenshots {
     padding-bottom: 30px;
 }
-
+.game-tags {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    row-gap: 0.5rem;
+}
 .game-tags-inline {
     display: inline-flex;
     gap: 0.3rem;

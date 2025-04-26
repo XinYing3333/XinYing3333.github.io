@@ -33,10 +33,6 @@ const translations = {
         art_name_poster:"Event Visual Design",
         art_info_poster:"",
 
-        //EnvironmentArt
-        art_name_environment:"Environment Design",
-        art_info_environment:"Game environment concept design.",
-
         //3DModel
         art_name_model:"3D Model",
         art_info_model:"",
@@ -92,9 +88,9 @@ const translations = {
         art_name_poster:"活動視覺設計",
         art_info_poster:"",
 
-        //EnvironmentArt
-        art_name_environment:"場景設計",
-        art_info_environment:"遊戲場景概念設計。",
+        //3DModel
+        art_name_model:"3D模型",
+        art_info_model:"",
 
         //BubbleParty
         project_name_bubbleParty:"泡泡派對!",
