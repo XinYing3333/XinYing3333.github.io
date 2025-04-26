@@ -37,6 +37,10 @@ const translations = {
         art_name_environment:"Environment Design",
         art_info_environment:"Game environment concept design.",
 
+        //3DModel
+        art_name_model:"3D Model",
+        art_info_model:"",
+
         //BubbleParty
         project_name_bubbleParty:"Bubble Party!",
         project_info_bubbleParty:"Project of GGJ-2025.",
