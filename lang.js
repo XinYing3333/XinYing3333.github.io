@@ -43,7 +43,7 @@ const translations = {
 
         //Freeze!
         project_name_freeze:"Freeze!",
-        project_info_freeze:"3D Shooting Games.",
+        project_info_freeze:"3D Shooting Party Game.",
 
         //Escape from the Cursed Convent
         project_name_escape:"Escape from the Cursed Convent",
@@ -98,7 +98,7 @@ const translations = {
 
         //Freeze!
         project_name_freeze:"Freeze!",
-        project_info_freeze:"3D 遊戲",
+        project_info_freeze:"3D射擊派對遊戲",
 
         //Escape from the Cursed Convent
         project_name_escape:"逃離地獄邊緣",
