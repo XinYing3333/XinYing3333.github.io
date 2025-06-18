@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>超低配寶可夢大師🎮</title>
+    <link rel="stylesheet" href="pokemon-style.css">
+    <link href="https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div class="stars"></div>
+
+<div class="container">
+    <div class="header">
+        <div><img src="https://hips.hearstapps.com/digitalspyuk.cdnds.net/16/49/1481216741-pokemon.gif?resize=640:*" alt=""></div>
+        <div>
+            <h1>超低配寶可夢大師</h1>
+            <p>廢廢的寶可夢文字冒險，就算只有文字，你也能成爲最厲害的寶可夢訓練家！</p>
+        </div>
+
+    </div>
+
+    <div class="stats-bar">
+        <div class="stat-item">
+            <div class="stat-value" id="playerLevel">1</div>
+            <div>等級</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-value" id="playerExp">0</div>
+            <div>經驗值</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-value" id="winCount">0</div>
+            <div>勝利次數</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-value" id="pokemonCount">0</div>
+            <div>收集數量</div>
+        </div>
+    </div>
+
+    <div class="battle-log" id="battleLog"></div>
+
+    <div class="game-controls">
+        <button class="btn" onclick="loadRandomPokemon()">🎲 探索野生寶可夢</button>
+        <button class="btn btn-blue" onclick="startRandomBattle()">⚔️ 隨機對戰</button>
+        <button class="btn btn-green" onclick="showMyPokemon()">📦 我的寶可夢</button>
+    </div>
+
+    <div id="loading" class="loading hidden">
+        <div class="spinner"><img src="https://media.tenor.com/5mz52kzlg6IAAAAj/bloodbros-search.gif" alt=""></div>
+        <div>搜尋中...</div>
+    </div>
+
+    <div id="battleArena" class="battle-arena">
+        <div class="vs-container">
+            <div class="pokemon-card" id="playerPokemon">
+                <div class="pokemon-image" id="playerImage">🎯</div>
+                <h3 id="playerName">選擇你的寶可夢</h3>
+                <div class="hp-bar">
+                    <div class="hp-fill" id="playerHP" style="width: 100%"></div>
+                </div>
+                <div id="playerStats"></div>
+            </div>
+
+            <div class="vs-text">VS</div>
+
+            <div class="pokemon-card" id="enemyPokemon">
+                <div class="pokemon-image" id="enemyImage">❓</div>
+                <h3 id="enemyName">野生寶可夢</h3>
+                <div class="hp-bar">
+                    <div class="hp-fill" id="enemyHP" style="width: 100%"></div>
+                </div>
+                <div id="enemyStats"></div>
+            </div>
+        </div>
+
+        <div class="attack-buttons">
+            <button class="attack-btn" onclick="attack('tackle')">撞擊</button>
+            <button class="attack-btn" onclick="attack('special')">特殊攻擊</button>
+            <button class="attack-btn" onclick="attack('heal')">治療</button>
+            <button class="attack-btn" onclick="catchPokemon()">收服</button>
+        </div>
+
+    </div>
+
+    <div id="pokemonGrid" class="pokemon-grid"></div>
+</div>
+
+<script src="pokemon-script.js"></script>
+
+</body>
+</html>
