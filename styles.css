@@ -563,6 +563,83 @@ body:not(.intro-page) .logo {
     border: 1px solid var(--border-color);
 }
 
+/* --- 強制重整作品格佈局 (貼在 CSS 最底部) --- */
+
+/* 1. 解除容器固定高度，改為垂直排列 */
+.portfolio-item {
+    height: auto !important; /* 覆蓋原本的 300px */
+    display: flex !important;
+    flex-direction: column !important;
+    position: relative !important;
+    background-color: var(--bg-color) !important;
+}
+
+/* 2. 修正圖片：由填滿改為自適應高度，並放置於頂部 */
+.portfolio-item img {
+    height: 200px !important; /* 固定圖片高度，可根據需求調整 */
+    object-fit: cover !important;
+    position: relative !important;
+    display: block !important;
+}
+
+/* 3. 重置內容區：解除絕對定位，使其排在圖片下方 */
+.portfolio-item-content {
+    position: relative !important; /* 解除 absolute */
+    opacity: 1 !important;        /* 強制顯示 */
+    visibility: visible !important; /* 強制顯示 */
+    background: transparent !important; /* 移除漸層遮罩 */
+    padding: 1rem !important;
+    width: 100% !important;
+    transform: none !important;
+}
+
+/* 4. 調整文字顏色與邊距 (確保在白/黑主題下清晰) */
+.portfolio-item-content h3 {
+    color: var(--text-color) !important;
+    margin-bottom: 0.3rem !important;
+    font-size: 1.2rem !important;
+}
+
+.portfolio-item-content p {
+    color: var(--smalltext-color) !important;
+    margin-bottom: 0.8rem !important;
+    font-size: 0.9rem !important;
+}
+
+/* 5. 確保標籤列常駐顯示 */
+.game-tags {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 0.4rem !important;
+}
+
+.portfolio-tag {
+    margin-left: 0 !important; /* 重置原本的 margin-left */
+    margin-right: 5px !important;
+    background-color: var(--border-color) !important;
+    color: var(--smalltext-color) !important;
+    display: inline-block !important;
+}
+
+/* 移除作品格超連結的預設下劃線 */
+.portfolio-item,
+.portfolio-item:hover,
+.portfolio-item:focus {
+    text-decoration: none !important; /* 強制移除下劃線 */
+    outline: none !important;        /* 移除點擊時的藍色外框 */
+}
+
+/* 確保內部標題與內文也不會出現下劃線 */
+.portfolio-item-content h3,
+.portfolio-item-content p {
+    text-decoration: none !important;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-8px) !important; /* 向上微調 */
+    box-shadow: 0 12px 24px var(--shadow-color) !important; /* 加強陰影 */
+}
+
 .play-button {
     display: inline-block;
     padding: 0.8rem 1.5rem;
@@ -648,6 +725,24 @@ body:not(.intro-page) .logo {
 .game-tags-inline {
     display: inline-flex;
     gap: 0.3rem;
+}
+
+.gallery-grid {
+    display: grid;
+    /* 設定兩欄佈局，每欄平分比例 (1fr)，可依需求調整欄數 */
+    grid-template-columns: repeat(3, 4fr);
+    gap: 20px;           /* 圖片之間的間距 */
+    padding: 20px;
+    width: 100%;         /* 容器寬度隨網頁比例 */
+    max-width: 1200px;   /* 限制最大寬度，避免在大螢幕過於拉伸 */
+    margin: 0 auto;      /* 居中顯示 */
+}
+.gallery-grid img{
+    width: 100%;         /* 寬度填滿格子的 100% */
+    height: auto;        /* 高度依比例縮放，不變形 */
+    display: block;
+    border-radius: 8px;  /* 可選：增加圓角 */
+    object-fit: contain; /* 確保圖片完整顯示（若格高固定則改用 cover） */
 }
 
 .screenshots-grid {

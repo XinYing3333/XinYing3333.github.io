@@ -8,25 +8,27 @@ const translations = {
         socialTitle: "Social Links",
 
         //section title
-        sectionTitle_Arts:"Arts",
+        sectionTitle_Arts:"Gallery",
         sectionTitle_Games:"Solo Projects",
-        sectionTitle_Projects:"Group Projects",
+        sectionTitle_Projects:"Projects",
 
         //Abang
         game_name_Abang:"Good Fishing",
-        game_info_Abang:"A 2D mini game that develop with Unity.",
+        game_info_Abang:"2024",
 
         game_tag_Program:"Programming",
         game_tag_GameDesign:"GameDesign",
         game_tag_Art:"Art",
         game_tag_Sfx:"Sfx",
+        game_tag_Solo:"Solo Project",
 
-        //CharacterArt
-        art_name_character:"Character Art",
-        art_info_character:"",
+
+        //GameArt
+        art_name_gameArt:"GameArt",
+        art_info_gameArt:"",
 
         //Illustration
-        art_name_illustration:"Illustration",
+        art_name_illustration:"Illustrations & Character Arts",
         art_info_illustration:"",
 
         //Poster
@@ -39,19 +41,19 @@ const translations = {
 
         //BubbleParty
         project_name_bubbleParty:"Bubble Party!",
-        project_info_bubbleParty:"Project of GGJ-2025.",
+        project_info_bubbleParty:"2025",
 
         //Freeze!
-        project_name_freeze:"Freeze!",
-        project_info_freeze:"3D Shooting Party Game.",
+        project_name_freeze:"Freeze! - 3D Shooting Party Game",
+        project_info_freeze:"2025",
 
         //Escape from the Cursed Convent
         project_name_escape:"Escape from the Cursed Convent",
-        project_info_escape:"Published indie game project.",
+        project_info_escape:"2021-2023",
 
         //Puppet's Heart
         project_name_puppets:"Puppet's Heart",
-        project_info_puppets:"Year 2 Game Project.",
+        project_info_puppets:"2024",
 
     },
     zh: {
@@ -65,23 +67,24 @@ const translations = {
         //section title
         sectionTitle_Arts:"美術",
         sectionTitle_Games:"個人專案",
-        sectionTitle_Projects:"團隊專案",
+        sectionTitle_Projects:"專案",
 
         //Abang
         game_name_Abang:"阿棒愛釣魚",
-        game_info_Abang:"使用 Unity 開發的 2D 釣魚小遊戲",
+        game_info_Abang:"2024",
 
         game_tag_Program:"程式",
         game_tag_GameDesign:"企劃",
         game_tag_Art:"美術",
         game_tag_Sfx:"音效",
+        game_tag_Solo:"個人專案",
 
-        //CharacterArt
-        art_name_character:"角色立繪",
-        art_info_character:"",
+        //GameArt
+        art_name_gameArt:"遊戲美術",
+        art_info_gameArt:"",
 
         //Illustration
-        art_name_illustration:"角色插圖",
+        art_name_illustration:"角色插圖&立繪",
         art_info_illustration:"",
 
         //Poster
@@ -94,19 +97,19 @@ const translations = {
 
         //BubbleParty
         project_name_bubbleParty:"泡泡派對!",
-        project_info_bubbleParty:"GGJ-2025 參與作品。",
+        project_info_bubbleParty:"2025",
 
         //Freeze!
-        project_name_freeze:"Freeze!",
-        project_info_freeze:"3D射擊派對遊戲",
+        project_name_freeze:"Freeze! - 3D射擊派對遊戲",
+        project_info_freeze:"2025",
 
         //Escape from the Cursed Convent
         project_name_escape:"逃離地獄邊緣",
-        project_info_escape:"已上架的獨立遊戲專案。",
+        project_info_escape:"2021-2023",
 
         //Puppet's Heart
         project_name_puppets:"布偶之心",
-        project_info_puppets:"大二小專題作品",
+        project_info_puppets:"2024",
     },
 };
 
