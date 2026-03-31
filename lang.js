@@ -99,7 +99,7 @@ const translations = {
         art_name_model:"3D模型",
         art_info_model:"",
 
-        //Dispell
+        //Dispell-fix
         project_name_dispell:"Dispell - 3D 平臺跳躍冒險游戲",
         project_info_dispell:"2026",
 
