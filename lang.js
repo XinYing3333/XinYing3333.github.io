@@ -39,8 +39,12 @@ const translations = {
         art_name_model:"3D Model",
         art_info_model:"",
 
+        //Dispell
+        project_name_dispell:"Dispell - 3D Platformer Game",
+        project_info_dispell:"2026",
+
         //BubbleParty
-        project_name_bubbleParty:"Bubble Party!",
+        project_name_bubbleParty:"Bubble Party! - Game Jam",
         project_info_bubbleParty:"2025",
 
         //Freeze!
@@ -95,8 +99,12 @@ const translations = {
         art_name_model:"3D模型",
         art_info_model:"",
 
+        //Dispell
+        project_name_dispell:"Dispell - 3D 平臺跳躍冒險游戲",
+        project_info_dispell:"2026",
+
         //BubbleParty
-        project_name_bubbleParty:"泡泡派對!",
+        project_name_bubbleParty:"泡泡派對! - Game Jam",
         project_info_bubbleParty:"2025",
 
         //Freeze!
