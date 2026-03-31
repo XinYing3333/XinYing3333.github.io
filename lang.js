@@ -1,6 +1,6 @@
 const translations = {
     en: {
-        //intro.html
+        //index.html
         title: "My Portfolio",
         name: "Tan Xin Ying",
         slogan: "Game Developer · 2D Artist",
@@ -57,7 +57,7 @@ const translations = {
 
     },
     zh: {
-        //intro.html
+        //index.html
         title: "我的作品集",
         name: "陳欣瑩",
         slogan: "遊戲開發 · 2D美術",
@@ -123,7 +123,7 @@ function toggleLanguage(lang) {
 
 function setLangAndGo(lang) {
     localStorage.setItem('lang', lang);
-    window.location.href = 'intro.html';
+    window.location.href = 'index.html';
 }
 
 function applyLang(lang) {
